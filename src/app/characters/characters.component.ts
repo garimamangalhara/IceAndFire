@@ -37,6 +37,7 @@ export class CharactersComponent implements OnInit {
   }
   getNextCharacter() {
     let count = this.characters.length
+    this.successMessage = ""
     if (this.traversedIndex.length == count) {
       this.allTraversed = true;
       return
@@ -65,6 +66,7 @@ export class CharactersComponent implements OnInit {
   }
   reset() {
     this.traversedIndex = [];
+    this.allTraversed = false;
     if (!this.won)
       this.score = 0
     this.getNextCharacter();

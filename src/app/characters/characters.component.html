@@ -1,12 +1,12 @@
 <div class="main-container">
   <h2>Guess the Character!!!</h2>
   <div>
-    <label>
+    <div>
       Gender:{{randomCharacter?.gender}}
-    </label>
-    <span>
+    </div>
+    <div>
       Alias:{{randomCharacter?.aliases[0]}}
-    </span>
+    </div>
   </div>
   <input [(ngModel)]="answer" (keyup.enter)="checkAnswer()">
   <div>
@@ -23,5 +23,7 @@
   </button>
   <div *ngIf="loader">
     Loading Next Question...
+  </div>
+  <div *ngIf="loader" class="loader">
   </div>
 </div>
