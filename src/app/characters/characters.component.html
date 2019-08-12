@@ -1,0 +1,27 @@
+<div class="main-container">
+  <h2>Guess the Character!!!</h2>
+  <div>
+    <label>
+      Gender:{{randomCharacter?.gender}}
+    </label>
+    <span>
+      Alias:{{randomCharacter?.aliases[0]}}
+    </span>
+  </div>
+  <input [(ngModel)]="answer" (keyup.enter)="checkAnswer()">
+  <div>
+    {{successMessage}}
+  </div>
+  <button class="btn-lg" (click)="getNextCharacter()">
+    Next Question
+  </button>
+  <div>
+    Your Score: {{score}}
+  </div>
+  <button *ngIf="allTraversed" (click)="reset()">
+    Start Again?
+  </button>
+  <div *ngIf="loader">
+    Loading Next Question...
+  </div>
+</div>

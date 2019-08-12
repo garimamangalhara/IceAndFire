@@ -1,0 +1,16 @@
+div{
+    color:white;
+}
+.char-card{
+    text-align: center;
+}
+.main-container{
+    text-align:center;
+}
+.main-container input,
+.main-container button{
+    margin:30px;
+}
+button:focus{
+    outline:none;
+}

@@ -1,0 +1,22 @@
+.card-block img{
+    width:300px;
+    height:auto;
+}
+.card-block{
+    background-color: none;
+    border:none;
+    text-align: center;
+}
+.row{
+    margin-top: 100px;
+}
+h1{
+    color:#7c601b;
+    text-align: center;
+
+}
+.card-block label{
+    font-size:20px;
+    color:#7c601b;
+    font-weight:1700px;
+}
